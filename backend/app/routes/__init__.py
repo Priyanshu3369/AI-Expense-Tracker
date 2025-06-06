@@ -1,5 +1,6 @@
-from flask import Blueprint
+from .auth import auth_bp
+from .expenses import expenses_bp
 
 def register_routes(app):
-    # Import and register Blueprints
-    pass  # Will add blueprints in upcoming steps
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(expenses_bp)
