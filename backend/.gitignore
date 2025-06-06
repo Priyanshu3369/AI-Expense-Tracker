@@ -3,4 +3,5 @@ __pycache__/
 instance/
 *.pyc
 .env
+.flaskenv
 db.sqlite3
